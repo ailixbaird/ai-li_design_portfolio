@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi, I'm Ai-li!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- BACKGROUND BLOBS -->
+<div class="blob-container" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
+
+<nav id="mainNav">
+  <div class="nav-left">
+    <a href="#" id="aboutLink">About Me</a>
+  </div>
+  <div class="nav-icons">
+    <a href="mailto:ai-libaird2027@u.northwestern.edu" title="Email">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/ai-libaird/" target="_blank" title="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M19 3A2 2 0 0121 5V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- MAIN SITE -->
+<div id="mainSite">
+
+  <!-- HERO -->
+  <section id="home">
+    <h1 class="hero-title">Hi, I'm Ai-li!</h1>
+    <p class="hero-subtitle"><span id="typedText"></span><span class="cursor">|</span></p>
+
+    <div class="photo-wrapper">
+      <svg class="doodle doodle-flask" width="90" height="110" viewBox="0 0 90 110" fill="none">
+        <line x1="35" y1="8" x2="35" y2="45" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="55" y1="8" x2="55" y2="45" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M35 45 C20 60 10 80 15 95 C20 108 70 108 75 95 C80 80 70 60 55 45" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <line x1="28" y1="8" x2="62" y2="8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="30" cy="78" r="4" stroke="white" stroke-width="1.2" fill="none"/>
+        <circle cx="52" cy="90" r="3" stroke="white" stroke-width="1.2" fill="none"/>
+        <circle cx="42" cy="68" r="2" stroke="white" stroke-width="1" fill="none"/>
+      </svg>
+      <svg class="doodle doodle-flower" width="100" height="120" viewBox="0 0 100 120" fill="none">
+        <line x1="50" y1="120" x2="50" y2="60" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <ellipse cx="50" cy="42" rx="10" ry="18" stroke="white" stroke-width="1.4" fill="none"/>
+        <ellipse cx="50" cy="42" rx="10" ry="18" stroke="white" stroke-width="1.4" fill="none" transform="rotate(60 50 42)"/>
+        <ellipse cx="50" cy="42" rx="10" ry="18" stroke="white" stroke-width="1.4" fill="none" transform="rotate(-60 50 42)"/>
+        <circle cx="50" cy="42" r="6" stroke="white" stroke-width="1.4" fill="none"/>
+        <line x1="75" y1="120" x2="75" y2="75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <ellipse cx="75" cy="60" rx="7" ry="14" stroke="white" stroke-width="1.3" fill="none"/>
+        <ellipse cx="75" cy="60" rx="7" ry="14" stroke="white" stroke-width="1.3" fill="none" transform="rotate(60 75 60)"/>
+        <ellipse cx="75" cy="60" rx="7" ry="14" stroke="white" stroke-width="1.3" fill="none" transform="rotate(-60 75 60)"/>
+        <circle cx="75" cy="60" r="4" stroke="white" stroke-width="1.3" fill="none"/>
+      </svg>
+      <svg class="doodle doodle-bulb" width="80" height="90" viewBox="0 0 80 90" fill="none">
+        <path d="M40 10 C22 10 12 25 12 38 C12 52 22 60 28 66 L28 74 L52 74 L52 66 C58 60 68 52 68 38 C68 25 58 10 40 10Z" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <line x1="30" y1="74" x2="50" y2="74" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="32" y1="80" x2="48" y2="80" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="40" y1="10" x2="40" y2="2" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="12" y1="38" x2="4" y2="32" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="68" y1="38" x2="76" y2="32" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <svg class="doodle doodle-pen" width="120" height="60" viewBox="0 0 120 60" fill="none">
+        <path d="M10 50 C30 30 60 20 90 18" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M80 10 L100 20 L85 30 Z" stroke="white" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="100" y1="20" x2="115" y2="15" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+
+      <div class="photo-circle">
+        <img src="images/photo-headshot.jpeg" alt="Ai-li"/>
+      </div>
+    </div>
+
+    <div class="bottom-tabs">
+      <button class="tab-btn active" id="workTab" onclick="scrollToWork()">Work</button>
+      <button class="tab-btn" id="creativeTab" onclick="scrollToCreative()">Creative</button>
+    </div>
+    <div class="divider"></div>
+  </section>
+
+  <!-- WORK CONTENT -->
+  <div id="workContent">
+    <section id="work">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-exp="genentech">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card" onclick="openExpModal('genentech')">
+            <img class="logo" src="images/logo-genentech.png" alt="Genentech" style="max-height:60px;max-width:260px;object-fit:contain;"/>
+          </div>
+          <div class="timeline-meta">
+            <div class="timeline-role">Cell Therapy Process Engineering Intern</div>
+            <div class="timeline-date">Summer 2026 (Incoming)</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-exp="synbio">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card" onclick="openExpModal('synbio')">
+            <img class="logo" src="images/logo-synbio.png" alt="Center for Synthetic Biology" style="max-height:60px;max-width:280px;object-fit:contain;"/>
+          </div>
+          <div class="timeline-meta">
+            <div class="timeline-role">Undergraduate Researcher</div>
+            <div class="timeline-date">2024&ndash;2026</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-exp="acurex">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card" onclick="openExpModal('acurex')">
+            <img class="logo" src="images/logo-acurex.png" alt="Acurex Biosciences" style="max-height:60px;max-width:240px;object-fit:contain;"/>
+          </div>
+          <div class="timeline-meta">
+            <div class="timeline-role">Research &amp; Development Intern</div>
+            <div class="timeline-date">Summer 2024</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-exp="nu">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card" onclick="openExpModal('nu')">
+            <img class="logo" src="images/logo-northwestern.png" alt="Northwestern University" style="max-height:60px;max-width:280px;object-fit:contain;"/>
+          </div>
+          <div class="timeline-meta">
+            <div class="timeline-role">Undergraduate Student &mdash; Cell & Developmental Biology</div>
+            <div class="timeline-date">2023&ndash;2027</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SKILLS CAROUSEL -->
+      <hr style="width:80%;margin:5rem auto 4rem;border:none;border-top:1.5px solid rgba(255,255,255,0.5);">
+      <div style="padding:0 0 2rem;">
+        <h2 style="font-family:'Libre Franklin',sans-serif;font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:700;color:var(--brown);text-align:center;margin-bottom:2.5rem;letter-spacing:-0.01em;">Skills</h2>
+        <div style="position:relative;">
+          <div id="skillsTrack" style="display:flex;gap:20px;overflow-x:auto;padding:10px 60px 20px;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;">
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><rect x="4" y="4" width="56" height="56" rx="6" fill="#f0f0f0" stroke="#ccc" stroke-width="1.5"/><polyline points="14,48 24,28 34,38 44,18 54,28" stroke="#7a5a9a" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="20" r="6" fill="#c8b0d8" opacity="0.7"/></svg>
+              <span class="skill-label">FPLC</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><ellipse cx="32" cy="48" rx="14" ry="6" fill="#e8a090" opacity="0.5"/><path d="M22 20 L20 48 Q32 54 44 48 L42 20 Z" fill="#e05a3a" opacity="0.85"/><path d="M20 20 Q32 16 44 20 L42 24 Q32 20 22 24 Z" fill="#c04a2a"/><ellipse cx="32" cy="20" rx="12" ry="4" fill="#d04a2a" opacity="0.6"/></svg>
+              <span class="skill-label">Cell culture</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><rect x="6" y="14" width="52" height="36" rx="4" fill="#fdf6e0" stroke="#d0c080" stroke-width="1.5"/><line x1="6" y1="28" x2="58" y2="28" stroke="#d0c080" stroke-width="1"/><circle cx="20" cy="42" r="5" fill="#f0c030" opacity="0.8"/><circle cx="44" cy="21" r="4" fill="#60a0e0" opacity="0.8"/><path d="M36 35 L40 25 L44 35 L40 40 Z" fill="#e05050" opacity="0.8" stroke="#c03030" stroke-width="1"/></svg>
+              <span class="skill-label">ELISA</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><rect x="6" y="18" width="52" height="8" rx="4" fill="#a0c870"/><rect x="6" y="32" width="40" height="8" rx="4" fill="#a0c870" opacity="0.7"/><rect x="6" y="46" width="50" height="8" rx="4" fill="#a0c870" opacity="0.5"/><circle cx="54" cy="49" r="5" fill="#e05050" opacity="0.8"/></svg>
+              <span class="skill-label">PCR</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><rect x="10" y="8" width="8" height="48" rx="3" fill="#8080c0" opacity="0.7"/><rect x="22" y="20" width="8" height="36" rx="3" fill="#8080c0" opacity="0.7"/><rect x="34" y="14" width="8" height="42" rx="3" fill="#8080c0" opacity="0.7"/><rect x="46" y="28" width="8" height="28" rx="3" fill="#8080c0" opacity="0.7"/></svg>
+              <span class="skill-label">Data analysis</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="22" fill="none" stroke="#60a860" stroke-width="2.5"/><path d="M32 10 Q42 32 32 54 Q22 32 32 10Z" fill="#60a860" opacity="0.25"/><line x1="10" y1="32" x2="54" y2="32" stroke="#60a860" stroke-width="2"/><ellipse cx="32" cy="32" rx="22" ry="10" fill="none" stroke="#60a860" stroke-width="1.5" opacity="0.5"/></svg>
+              <span class="skill-label">Western blot</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="24" r="12" fill="none" stroke="#e07a5a" stroke-width="2"/><path d="M16 52 Q16 38 32 38 Q48 38 48 52" fill="none" stroke="#e07a5a" stroke-width="2" stroke-linecap="round"/><line x1="38" y1="18" x2="50" y2="10" stroke="#e07a5a" stroke-width="1.5" stroke-linecap="round"/><circle cx="52" cy="9" r="3" fill="#e07a5a" opacity="0.7"/></svg>
+              <span class="skill-label">Scientific Communication</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><circle cx="20" cy="32" r="10" fill="none" stroke="#5a8a6a" stroke-width="2"/><circle cx="44" cy="32" r="10" fill="none" stroke="#5a8a6a" stroke-width="2"/><line x1="30" y1="32" x2="34" y2="32" stroke="#5a8a6a" stroke-width="2" stroke-linecap="round"/><path d="M20 22 Q32 12 44 22" fill="none" stroke="#5a8a6a" stroke-width="1.5" stroke-linecap="round"/><path d="M20 42 Q32 52 44 42" fill="none" stroke="#5a8a6a" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span class="skill-label">Problem-Solving</span>
+            </div>
+            <div class="skill-card">
+              <svg viewBox="0 0 64 64" width="52" height="52"><rect x="8" y="20" width="28" height="20" rx="4" fill="none" stroke="#7a6aaa" stroke-width="2"/><rect x="28" y="28" width="28" height="20" rx="4" fill="none" stroke="#7a6aaa" stroke-width="2"/><line x1="22" y1="28" x2="22" y2="40" stroke="#7a6aaa" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2,2"/></svg>
+              <span class="skill-label">Stakeholder Communication</span>
+            </div>
+          </div>
+          <button onclick="document.getElementById('skillsTrack').scrollBy({left:-260,behavior:'smooth'})" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:1.4rem;color:var(--brown);opacity:0.7;padding:4px;">&#9664;</button>
+          <button onclick="document.getElementById('skillsTrack').scrollBy({left:260,behavior:'smooth'})" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:1.4rem;color:var(--brown);opacity:0.7;padding:4px;">&#9654;</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- CREATIVE CONTENT -->
+  <div id="creativeContent" style="display:none; background:#d2d6b8; min-height:100vh;">
+    <section id="creative" style="background:#d2d6b8;">
+      <div class="creative-layout">
+        <div class="creative-sidebar">
+          <ul>
+            <li class="cat-active" data-cat="all">Gallery</li>
+            <li data-cat="painting">Painting</li>
+            <li data-cat="photography">Photography</li>
+            <li data-cat="graphic-design">Graphic Design</li>
+            <li data-cat="modeling">Modeling</li>
+          </ul>
+        </div>
+        <div id="creativeGrid">
+
+          <!-- Non-painting masonry -->
+          <div id="masonryGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="gallery-item" data-cat="painting" data-caption="Painting" onclick="showCat('painting')">
+              <img src="images/painting-florence.jpeg" alt="Painting" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/2;" onerror="this.style.display='none';this.parentNode.style.aspectRatio='3/2'"/>
+              <div class="gallery-caption">Painting</div>
+            </div>
+            <div class="gallery-item" data-cat="photography" data-caption="Photography" onclick="showCat('photography')">
+              <svg class="ph" viewBox="0 0 320 213" style="width:100%;border-radius:0.75rem;display:block;aspect-ratio:3/2;"><rect width="320" height="380" rx="12" fill="#7a8a9a"/><circle cx="160" cy="140" r="70" fill="#a8b8c8" opacity="0.5"/><rect x="80" y="240" width="160" height="80" rx="8" fill="#8a9aaa" opacity="0.5"/></svg>
+              <div class="gallery-caption">Photography</div>
+            </div>
+            <div class="gallery-item" data-cat="graphic-design" data-caption="Graphic Design" onclick="showCat('graphic-design')">
+              <svg class="ph" viewBox="0 0 320 213" style="width:100%;border-radius:0.75rem;display:block;aspect-ratio:3/2;"><rect width="320" height="380" rx="12" fill="#a87a5a"/><circle cx="120" cy="130" r="60" fill="#c89a7a" opacity="0.6"/><rect x="170" y="80" width="110" height="150" rx="8" fill="#8a5a3a" opacity="0.5"/></svg>
+              <div class="gallery-caption">Graphic Design</div>
+            </div>
+            <div class="gallery-item" data-cat="modeling" data-caption="Modeling" onclick="showCat('modeling')">
+              <svg class="ph" viewBox="0 0 320 213" style="width:100%;border-radius:0.75rem;display:block;aspect-ratio:3/2;"><rect width="320" height="380" rx="12" fill="#2a2a3a"/><ellipse cx="160" cy="130" rx="55" ry="65" fill="#c4a882" opacity="0.8"/><rect x="95" y="195" width="130" height="140" rx="8" fill="#8a3a3a" opacity="0.7"/></svg>
+              <div class="gallery-caption">Modeling</div>
+            </div>
+          </div>
+
+          <!-- Painting sections -->
+          <div id="paintingGrid" style="display:none;">
+
+            <div class="gallery-section-header">
+              <h3 class="gallery-section-title">Study Abroad: Florence, Italy</h3>
+              <p class="gallery-section-desc">Select works from my coursework in Florence, Italy during my time abroad.</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+
+            <!-- Row 1: Florence spans 2 cols, Still Life in col 3 -->
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1rem;align-items:start;">
+              <div style="grid-column:span 2;">
+                <div class="gallery-item" data-cat="painting" data-caption="Florence, Oil on Canvas, 2025" onclick="openLightbox(this)">
+                  <img src="images/painting-florence.jpeg" alt="Florence, Oil on Canvas, 2025" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Florence, Oil on Canvas, 2025</div>
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item" data-cat="painting" data-caption="Still Life, Oil on Paper, 2025" onclick="openLightbox(this)">
+                  <img src="images/painting-stilllife.png" alt="Still Life, Oil on Paper, 2025" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Still Life, Oil on Paper, 2025</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: Interlaken | Woman + Loneliness | Cinque Terre -->
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1rem;align-items:start;">
+              <div>
+                <div class="gallery-item" data-cat="painting" data-caption="Interlaken, Oil on Paper, 2025" onclick="openLightbox(this)">
+                  <img src="images/painting-interlaken.png" alt="Interlaken, Oil on Paper, 2025" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Interlaken, Oil on Paper, 2025</div>
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item" data-cat="painting" data-caption="Woman in the Mountains, Oil on Paper, 2025" onclick="openLightbox(this)" style="margin-bottom:1rem;">
+                  <img src="images/painting-woman.png" alt="Woman in the Mountains" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Woman in the Mountains, Oil on Paper, 2025</div>
+                </div>
+                <div class="gallery-item" data-cat="painting" data-caption="Loneliness, Oil on Paper, 2025" onclick="openLightbox(this)">
+                  <img src="images/painting-loneliness.png" alt="Loneliness, Oil on Paper, 2025" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Loneliness, Oil on Paper, 2025</div>
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item" data-cat="painting" data-caption="Cinque Terre, Oil on Paper, 2025" onclick="openLightbox(this)">
+                  <img src="images/painting-cinqueterre.png" alt="Cinque Terre, Oil on Paper, 2025" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Cinque Terre, Oil on Paper, 2025</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery-section-header" style="margin-top:3rem;">
+              <h3 class="gallery-section-title">"Doorway Into the Past" (Mural)</h3>
+              <p class="gallery-section-desc">Large-scale mural for my high school community as part of my senior capstone project.</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+            <div class="painting-carousel-wrap">
+              <div class="painting-carousel" id="muralCarousel">
+                <div class="gallery-item carousel-item" data-cat="painting" data-caption="Mural, Oakland, CA, 2023" onclick="openLightbox(this)">
+                  <img src="images/painting-mural-1.jpeg" alt="Mural 1" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;"/>
+                </div>
+                <div class="gallery-item carousel-item" data-cat="painting" data-caption="Mural context view, 2023" onclick="openLightbox(this)">
+                  <img src="images/painting-mural-2.jpeg" alt="Mural 2" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;"/>
+                </div>
+                <div class="gallery-item carousel-item" data-cat="painting" data-caption="Mural detail, 2023" onclick="openLightbox(this)">
+                  <img src="images/painting-mural-3.jpeg" alt="Mural 3" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;"/>
+                </div>
+                <div class="gallery-item carousel-item" data-cat="painting" data-caption="Mural detail 2, 2023" onclick="openLightbox(this)">
+                  <img src="images/painting-mural-4.jpeg" alt="Mural 4" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;"/>
+                </div>
+                <div class="gallery-item carousel-item" data-cat="painting" data-caption="Mural detail 3, 2023" onclick="openLightbox(this)">
+                  <img src="images/painting-mural-5.png" alt="Mural 5" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;"/>
+                </div>
+              </div>
+              <button class="carousel-btn carousel-next" onclick="scrollCarousel('muralCarousel', 1)">&#8250;</button>
+              <button class="carousel-btn carousel-prev" onclick="scrollCarousel('muralCarousel', -1)">&#8249;</button>
+            </div>
+
+            <div class="gallery-section-header" style="margin-top:3rem;">
+              <h3 class="gallery-section-title">Early Portfolio Art</h3>
+              <p class="gallery-section-desc">Selected works from middle &amp; high school.</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+            <div class="painting-subsection">
+              <div class="gallery-item" data-cat="painting" data-caption="Early Portfolio, 2021" onclick="openLightbox(this)">
+                <img src="images/painting-early-1.jpeg" alt="Early Portfolio 1" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Early Portfolio, 2021</div>
+              </div>
+              <div class="gallery-item" data-cat="painting" data-caption="Koi, Early Portfolio" onclick="openLightbox(this)">
+                <img src="images/painting-early-2.png" alt="Koi" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Koi, Early Portfolio</div>
+              </div>
+              <div class="gallery-item" data-cat="painting" data-caption="Strawberries, Early Portfolio" onclick="openLightbox(this)">
+                <img src="images/painting-early-3.jpeg" alt="Strawberries" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Strawberries, Early Portfolio</div>
+              </div>
+            </div>
+            <div class="painting-subsection" style="grid-template-columns:1fr 1fr;">
+              <div class="gallery-item" data-cat="painting" data-caption="Palm Trees, Early Portfolio" onclick="openLightbox(this)">
+                <img src="images/painting-early-4.jpeg" alt="Palm Trees" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;"/>
+                  <div class="gallery-caption">Match, Early Portfolio</div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- Photography sections -->
+          <div id="photographyGrid" style="display:none;">
+
+            <div class="gallery-section-header">
+              <h3 class="gallery-section-title">Gold Arrow Camp</h3>
+              <p class="gallery-section-desc">Professional Work</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-bottom:3rem;align-items:start;">
+              <div>
+              <div class="gallery-item" data-cat="photography" data-caption="Gold Arrow Camp" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-camp-1.jpg" alt="Gold Arrow Camp" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              <div class="gallery-item" data-cat="photography" data-caption="Gold Arrow Camp" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-camp-4.jpg" alt="Gold Arrow Camp" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              </div>
+              <div>
+              <div class="gallery-item" data-cat="photography" data-caption="Gold Arrow Camp" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-camp-2.jpg" alt="Gold Arrow Camp" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              <div class="gallery-item" data-cat="photography" data-caption="Gold Arrow Camp" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-camp-5.jpg" alt="Gold Arrow Camp" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              </div>
+              <div>
+              <div class="gallery-item" data-cat="photography" data-caption="Gold Arrow Camp" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-camp-3.jpg" alt="Gold Arrow Camp" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              <div class="gallery-item" data-cat="photography" data-caption="Gold Arrow Camp" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-camp-6.jpg" alt="Gold Arrow Camp" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              </div>
+            </div>
+
+            <div class="gallery-section-header">
+              <h3 class="gallery-section-title">Travel Photography</h3>
+              <p class="gallery-section-desc">Personal Work</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-bottom:1rem;align-items:start;">
+              <div>
+              <div class="gallery-item" data-cat="photography" data-caption="Travel Photography" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-travel-1.jpg" alt="Travel Photography" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              <div class="gallery-item" data-cat="photography" data-caption="Travel Photography" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-travel-4.jpg" alt="Travel Photography" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              </div>
+              <div>
+              <div class="gallery-item" data-cat="photography" data-caption="Travel Photography" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-travel-2.jpg" alt="Travel Photography" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              <div class="gallery-item" data-cat="photography" data-caption="Travel Photography" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-travel-5.jpg" alt="Travel Photography" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              </div>
+              <div>
+              <div class="gallery-item" data-cat="photography" data-caption="Travel Photography" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-travel-3.jpg" alt="Travel Photography" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              <div class="gallery-item" data-cat="photography" data-caption="Travel Photography" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                <img src="images/photo-travel-6.jpg" alt="Travel Photography" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:4/5;" onerror="this.style.display='none';this.parentNode.style.background='#b8c8a8';this.parentNode.style.aspectRatio='4/5';this.parentNode.style.borderRadius='0.75rem'"/>
+              </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Modeling sections -->
+          <div id="modelingGrid" style="display:none;">
+
+            <div class="gallery-section-header">
+              <h3 class="gallery-section-title">STITCH Magazine</h3>
+              <p class="gallery-section-desc">Fashion editorial exploring the theme of academia.</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0.75rem;margin-bottom:1rem;align-items:start;">
+              <div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                  <img src="images/modeling-1.jpg" alt="STITCH 1" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#b8c4a8';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)">
+                  <img src="images/modeling-5.jpg" alt="STITCH 5" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#c4b8a8';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                  <img src="images/modeling-2.jpg" alt="STITCH 2" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#a8b4c4';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)">
+                  <img src="images/modeling-6.jpg" alt="STITCH 6" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#b4a8c4';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                  <img src="images/modeling-3.jpg" alt="STITCH 3" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#a8c4b8';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)">
+                  <img src="images/modeling-7.jpg" alt="STITCH 7" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#c4a8a8';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)" style="margin-bottom:0.75rem;">
+                  <img src="images/modeling-4.jpg" alt="STITCH 4" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#b8a8c4';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+                <div class="gallery-item" data-cat="modeling" data-caption="STITCH Magazine, 2026" onclick="openLightbox(this)">
+                  <img src="images/modeling-8.jpg" alt="STITCH 8" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;" onerror="this.style.display='none';this.parentNode.style.background='#a8c4c4';this.parentNode.style.aspectRatio='2/3';this.parentNode.style.borderRadius='0.75rem'"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Graphic Design sections -->
+          <div id="gdGrid" style="display:none;">
+
+            <div class="gallery-section-header">
+              <h3 class="gallery-section-title"><a href="https://simplisci.org/new-page" target="_blank" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">Simpli Sci</a></h3>
+              <p class="gallery-section-desc">Making science more understandable one doodle at a time.</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+            <div class="painting-carousel-wrap">
+              <div class="painting-carousel" id="simpliSciCarousel">
+                <div class="gallery-item carousel-item" data-cat="graphic-design" data-caption="Simpli Sci Issue 1" onclick="openLightbox(this)">
+                  <img src="images/gd-simplisci-1.png" alt="Simpli Sci 1" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;" onerror="this.parentNode.style.background='#c8d4b8';this.style.display='none'"/>
+                </div>
+                <div class="gallery-item carousel-item" data-cat="graphic-design" data-caption="Simpli Sci Issue 2" onclick="openLightbox(this)">
+                  <img src="images/gd-simplisci-2.png" alt="Simpli Sci 2" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;" onerror="this.parentNode.style.background='#c8d4b8';this.style.display='none'"/>
+                </div>
+                <div class="gallery-item carousel-item" data-cat="graphic-design" data-caption="Simpli Sci Issue 3" onclick="openLightbox(this)">
+                  <img src="images/gd-simplisci-3.png" alt="Simpli Sci 3" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;" onerror="this.parentNode.style.background='#c8d4b8';this.style.display='none'"/>
+                </div>
+                <div class="gallery-item carousel-item" data-cat="graphic-design" data-caption="Simpli Sci Issue 4" onclick="openLightbox(this)">
+                  <img src="images/gd-simplisci-4.png" alt="Simpli Sci 4" style="width:100%;border-radius:0.75rem;display:block;object-fit:cover;aspect-ratio:3/4;" onerror="this.parentNode.style.background='#c8d4b8';this.style.display='none'"/>
+                </div>
+              </div>
+              <button class="carousel-btn carousel-next" onclick="scrollCarousel('simpliSciCarousel', 1)">&#8250;</button>
+              <button class="carousel-btn carousel-prev" onclick="scrollCarousel('simpliSciCarousel', -1)">&#8249;</button>
+            </div>
+
+            <div class="gallery-section-header" style="margin-top:3rem;">
+              <h3 class="gallery-section-title"><a href="https://www.stitchfashion.com/" target="_blank" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">STITCH Fashion</a></h3>
+              <p class="gallery-section-desc">Graphic Designer</p>
+              <hr class="gallery-section-rule"/>
+            </div>
+            <p style="font-family:'DM Sans',sans-serif;font-size:clamp(0.88rem,1.3vw,1rem);color:var(--white);opacity:0.85;margin-bottom:3rem;">Coming soon!</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox(event)">
+        <div class="lightbox-inner">
+          <button class="lightbox-close" onclick="closeLightbox()">&#215;</button>
+          <img id="lightboxImg" src="" alt=""/>
+          <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div><!-- /mainSite -->
+
+
+
+
+<!-- ABOUT PAGE -->
+<div id="aboutPage" style="display:none; min-height:100vh; padding:0;">
+  <div class="about-page-inner">
+
+    <div class="about-content">
+      <img src="images/photo-canyon.jpeg" alt="Ai-li at the Grand Canyon" class="about-photo"/>
+      <div class="about-text-col">
+        <h1 class="about-title-text">About Me</h1>
+        <p class="about-greeting">Hi! Nice to meet you :)</p>
+        <p class="about-body">
+          I'm Ai-li, and I'm a junior at Northwestern University studying
+          Cell &amp; Developmental Biology and design. I combine science and
+          creativity to build impactful solutions that
+          <span class="about-highlight">meaningfully improve lives &amp; make positive change.</span>
+          I can't wait to help develop cell therapies at Genentech this summer to better
+          patients' health outcomes.
+        </p>
+        <p class="about-body">
+          You can find me running on a local trail, strumming my acoustic
+          guitar (not very well), engaging in a deep philosophical
+          conversation, or exploring the vintage fashion scene with friends &amp; family.
+        </p>
+        <p class="about-connect-label">Let's connect!</p>
+        <div class="about-connect-row">
+          <a href="mailto:ai-libaird2027@u.northwestern.edu" class="about-icon-link" title="Email">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ai-libaird/" target="_blank" class="about-icon-link" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 3A2 2 0 0121 5V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          </a>
+          <a href="#" class="about-resume-btn">Resume</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:flex-start;padding-top:2.5rem;">
+      <a href="#" class="about-back-btn" id="backBtn">&#8592;</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- EXPERIENCE MODALS -->
+<div class="exp-modal-overlay" id="expModalOverlay" onclick="closeExpModal(event)">
+  <div class="exp-modal" id="expModalBox">
+    <div id="expModalBanner"></div>
+    <div class="exp-modal-body">
+      <img id="expModalLogo" class="exp-modal-logo" src="" alt=""/>
+      <div class="exp-modal-grid">
+        <div>
+          <div class="exp-modal-field-label">Role</div>
+          <div class="exp-modal-field-val" id="expModalRole"></div>
+          <div id="expModalWithSection">
+            <div class="exp-modal-field-label">With</div>
+            <div class="exp-modal-field-val" id="expModalWith"></div>
+          </div>
+        </div>
+        <div>
+          <div class="exp-modal-field-label">Timeline</div>
+          <div class="exp-modal-field-val" id="expModalTimeline"></div>
+        </div>
+      </div>
+      <div class="exp-modal-section" id="expModalBgSection">
+        <div class="exp-modal-field-label" id="expModalBgLabel">Company Background</div>
+        <div class="exp-modal-field-val" id="expModalBackground"></div>
+      </div>
+      <div class="exp-modal-section" id="expModalWorkSection">
+        <div class="exp-modal-field-label">Work</div>
+        <div class="exp-modal-field-val" id="expModalWork"></div>
+      </div>
+      <div id="expModalSkills" class="exp-modal-section" style="display:none;">
+        <div class="exp-modal-field-label">Skills</div>
+        <div id="expModalSkillsList" class="exp-skills-list"></div>
+      </div>
+      <div id="expModalGallery" class="exp-modal-section" style="display:none;">
+        <div class="exp-modal-field-label">Gallery</div>
+        <div id="expModalGalleryGrid" class="exp-gallery-grid"></div>
+      </div>
+      <button class="exp-modal-back" onclick="document.getElementById('expModalOverlay').classList.remove('em-open');document.body.style.overflow='';">
+        <span class="exp-modal-back-circle">&#8592;</span> All experiences
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+// ══ SHOW CATEGORY HELPER ══
+function showCat(cat) {
+  document.querySelectorAll('.creative-sidebar li').forEach(function(l) {
+    l.classList.toggle('cat-active', l.dataset.cat === cat);
+  });
+  var masonry = document.getElementById('masonryGrid');
+  var painting = document.getElementById('paintingGrid');
+  var gd = document.getElementById('gdGrid');
+  var modeling = document.getElementById('modelingGrid');
+  var photography = document.getElementById('photographyGrid');
+  masonry.style.display = 'none';
+  painting.style.display = cat === 'painting' ? 'block' : 'none';
+  gd.style.display = cat === 'graphic-design' ? 'block' : 'none';
+  modeling.style.display = cat === 'modeling' ? 'block' : 'none';
+  photography.style.display = cat === 'photography' ? 'block' : 'none';
+}
+
+// ══ TYPEWRITER ══
+(function() {
+  var words = ['Scientist', 'Designer', 'Problem-Solver', 'Artist', 'Traveler', 'Foodie', 'Outdoors Enthusiast'];
+  var el = document.getElementById('typedText');
+  var wordIndex = 0, charIndex = 0, deleting = false;
+  var typeSpeed = 90, deleteSpeed = 50, pauseAfterWord = 1600;
+  function type() {
+    var current = words[wordIndex];
+    if (deleting) {
+      charIndex--;
+      el.textContent = current.substring(0, charIndex);
+      if (charIndex === 0) { deleting = false; wordIndex = (wordIndex + 1) % words.length; setTimeout(type, 400); return; }
+      setTimeout(type, deleteSpeed);
+    } else {
+      charIndex++;
+      el.textContent = current.substring(0, charIndex);
+      if (charIndex === current.length) { setTimeout(function() { deleting = true; setTimeout(type, 200); }, pauseAfterWord); return; }
+      setTimeout(type, typeSpeed);
+    }
+  }
+  setTimeout(type, 800);
+})();
+
+// ══ BLOB FADE ══
+(function() {
+  var blob = document.querySelector('.blob-container');
+  function update() {
+    var h = document.getElementById('home').offsetHeight;
+    var s = window.scrollY;
+    blob.style.opacity = 1 - Math.min(1, Math.max(0, (s - h * 0.3) / (h * 0.5)));
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+// ══ PAGE SWITCHING ══
+function showWork() {
+  document.getElementById('workContent').style.display = 'block';
+  document.getElementById('creativeContent').style.display = 'none';
+  document.getElementById('workTab').classList.add('active');
+  document.getElementById('creativeTab').classList.remove('active');
+  setTimeout(function() { document.getElementById('work').scrollIntoView({ behavior: 'smooth' }); }, 50);
+}
+function showCreative() {
+  document.getElementById('creativeContent').style.display = 'block';
+  document.getElementById('workContent').style.display = 'none';
+  document.getElementById('creativeTab').classList.add('active');
+  document.getElementById('workTab').classList.remove('active');
+  setTimeout(function() { document.getElementById('creative').scrollIntoView({ behavior: 'smooth' }); }, 50);
+}
+function scrollToWork() { showWork(); }
+function scrollToCreative() { showCreative(); }
+
+// ══ SCROLL TAB HIGHLIGHT ══
+window.addEventListener('scroll', function() {
+  if (document.getElementById('mainSite').style.display === 'none') return;
+  var s = window.scrollY;
+  if (document.getElementById('workContent').style.display !== 'none') {
+    var wTop = document.getElementById('work').offsetTop - 200;
+    document.getElementById('workTab').classList.toggle('active', s >= wTop);
+  }
+  if (document.getElementById('creativeContent').style.display !== 'none') {
+    var cTop = document.getElementById('creative').offsetTop - 200;
+    document.getElementById('creativeTab').classList.toggle('active', s >= cTop);
+  }
+});
+
+// ══ ABOUT ME ══
+document.getElementById('aboutLink').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('mainSite').style.display = 'none';
+  document.getElementById('aboutPage').style.display = 'block';
+  document.getElementById('mainNav').style.display = 'none';
+  window.scrollTo(0, 0);
+});
+document.getElementById('backBtn').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('aboutPage').style.display = 'none';
+  document.getElementById('mainSite').style.display = 'block';
+  document.getElementById('mainNav').style.display = '';
+  window.scrollTo(0, 0);
+});
+
+// ══ TIMELINE REVEAL ══
+var ro = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      var el = entry.target, delay = el.dataset.delay || 0;
+      setTimeout(function() { el.classList.add('visible'); }, delay);
+      ro.unobserve(el);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.timeline-item').forEach(function(el, i) { el.dataset.delay = i * 120; ro.observe(el); });
+
+// ══ CAROUSEL ══
+function scrollCarousel(id, dir) { document.getElementById(id).scrollBy({ left: dir * 320, behavior: 'smooth' }); }
+
+// ══ CATEGORY FILTER ══
+document.querySelectorAll('.creative-sidebar li').forEach(function(li) {
+  li.addEventListener('click', function() {
+    document.querySelectorAll('.creative-sidebar li').forEach(function(l) { l.classList.remove('cat-active'); });
+    this.classList.add('cat-active');
+    var cat = this.dataset.cat;
+    var masonry = document.getElementById('masonryGrid');
+    var painting = document.getElementById('paintingGrid');
+    var gd = document.getElementById('gdGrid');
+    if (cat === 'all') {
+      masonry.style.display = 'grid'; painting.style.display = 'none'; gd.style.display = 'none'; document.getElementById('modelingGrid').style.display = 'none'; document.getElementById('photographyGrid').style.display = 'none';
+      document.querySelectorAll('#masonryGrid .gallery-item').forEach(function(i) { i.style.display = 'block'; });
+    } else if (cat === 'painting') {
+      masonry.style.display = 'none'; painting.style.display = 'block'; gd.style.display = 'none'; document.getElementById('modelingGrid').style.display = 'none';
+    } else if (cat === 'graphic-design') {
+      masonry.style.display = 'none'; painting.style.display = 'none'; gd.style.display = 'block'; document.getElementById('modelingGrid').style.display = 'none'; document.getElementById('photographyGrid').style.display = 'none';
+    } else if (cat === 'modeling') {
+      masonry.style.display = 'none'; painting.style.display = 'none'; gd.style.display = 'none';
+      document.getElementById('photographyGrid').style.display = 'none';
+      document.getElementById('modelingGrid').style.display = 'block';
+    } else if (cat === 'photography') {
+      masonry.style.display = 'none'; painting.style.display = 'none'; gd.style.display = 'none';
+      document.getElementById('modelingGrid').style.display = 'none';
+      document.getElementById('photographyGrid').style.display = 'block';
+    } else {
+      painting.style.display = 'none'; gd.style.display = 'none';
+      document.getElementById('modelingGrid').style.display = 'none';
+      document.getElementById('photographyGrid').style.display = 'none';
+      masonry.style.display = 'block';
+      document.querySelectorAll('#masonryGrid .gallery-item').forEach(function(i) {
+        i.style.display = i.dataset.cat === cat ? 'block' : 'none';
+      });
+    }
+  });
+});
+
+// ══ LIGHTBOX ══
+function openLightbox(el) {
+  var img = el.querySelector('img'), svg = el.querySelector('svg');
+  if (img) document.getElementById('lightboxImg').src = img.src;
+  else if (svg) document.getElementById('lightboxImg').src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(new XMLSerializer().serializeToString(svg));
+  document.getElementById('lightboxCaption').textContent = el.dataset.caption || '';
+  document.getElementById('lightboxOverlay').classList.add('lb-open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e) {
+  if (!e || e.target === document.getElementById('lightboxOverlay') || (e.target && e.target.classList.contains('lightbox-close'))) {
+    document.getElementById('lightboxOverlay').classList.remove('lb-open');
+    document.body.style.overflow = '';
+  }
+}
+
+// ══ EXPERIENCE MODALS ══
+var expData = {
+  genentech: {
+    bannerImage: 'images/genentech_cover.jpeg',
+    bannerColor: 'linear-gradient(135deg,#e8f0f8,#f5e8e0)',
+    role: 'Cell Therapy Process Engineering Intern (Incoming)',
+    timeline: 'June \u2013 August 2026',
+    with: 'Jessica Stone (MSAT Senior Engineer)',
+    background: 'As one of the first biotechnology companies, Genentech has helped shape the industry for 50 years and now operates as a member of Roche, continuing to drive global innovation. Headquartered in South San Francisco, California.',
+    work: 'Will optimize manufacturing scale-up initiatives for novel cell therapy programs to improve production efficiency and scalability.'
+  },
+  acurex: {
+    bannerImage: 'images/acurex_cover.jpeg',
+    bannerColor: 'linear-gradient(135deg,#0a0a1a,#1a1a3a)',
+    role: 'Research & Development Intern',
+    timeline: 'June \u2013 September 2024',
+    with: 'Eric Beattie (Principal Scientist)\nBill Shrader (Chief Scientific Officer)\nSean Pintovski (VP of Biology)',
+    background: 'Biotechnology start-up located in San Carlos, CA focusing on therapies for neurodegenerative diseases such as Parkinson\u2019s Disease, Alzheimer\u2019s Disease, and ALS.',
+    work: 'In the summer of 2024, I worked at the intersection of science and strategy as a Research & Development Intern, helping evaluate a new therapeutic approach for Parkinson\u2019s Disease.\n\nAcross both R&D and business development, I designed and conducted experiments across 6+ human and mouse cell lines, performing assays (ELISA, fluorescence imaging) to better understand how their leading drug candidate impacted disease pathology. I translated complex experimental results into clear, actionable insights to further strategic decision-making that contributed to successful Series A fundraising.',
+    workHighlight: 'The people at Acurex motivated me with their values, wisdom, and convictions to use science to innovate real solutions that can change lives.',
+    skills: ['Cell culture', 'ELISA', 'Fluorescence Microscopy', 'Scientific Presentation', 'Stakeholder Communication'],
+    gallery: ['images/acurex-1.jpg', 'images/acurex-2.jpg', 'images/acurex-3.jpg']
+  },
+  synbio: {
+    bannerColor: 'linear-gradient(135deg,#3a1a6e,#5a2a8e)',
+    role: 'Undergraduate Researcher',
+    timeline: 'September 2024 \u2013 June 2026',
+    with: 'Rogelio Alvarado (PhD Student)\nProfessor Danielle Tullman-Ercek (Principle Investigator)',
+    background: 'The Northwestern Center for Synthetic Biology (CSB) is an interdisciplinary hub for engineering biology, uniting research, education, and entrepreneurship, training the next generation of biology leaders and kickstarting seven startups. The DTE lab studies protein assemblies for potential applications to biomolecular devices in medicine and environmentally-conscious biomaterials.',
+    work: 'For 2 years at Northwestern, I worked alongside Rogelio Alvarado in the Virus-Like Particle subgroup. I designed and purified 10+ novel protein variants, analyzing results and refining experimental workflows. I regularly presented findings at lab meetings, translating technical results into clear, actionable recommendations that helped guide future directions of the lab.',
+    workHighlight: 'Being a researcher has helped me approach scientific problems as design challenges grounded in system-level thinking and iteration.',
+    skills: ['FPLC', 'AlphaFold', 'Protein Purification', 'Bacterial Transformation', 'Sanger Sequencing'],
+    gallery: ['images/synbio-1.jpg', 'images/synbio-2.jpg', 'images/synbio-3.jpg']
+  },
+  nu: {
+    bannerImage: 'images/nu_cover.jpeg',
+    bannerColor: 'linear-gradient(135deg,#3a2a6e,#5a4a8e)',
+    role: 'Student',
+    timeline: 'September 2023 \u2013 June 2027',
+    with: '',
+    background: '',
+    coursework: 'Cell & Molecular Biology + Lab\nOrganic Chemistry + Lab\nBiochemistry\nPhysics + Lab\nMultivariable Calculus\nEngineering Analysis I\nDesigning with AI',
+    work: '',
+    skills: ['CRISPR', 'qPCR', 'Fluorescent Imaging', 'MATLAB', 'Scientific Communication']
+  }
+};
+
+function openExpModal(key) {
+  var d = expData[key];
+  if (!d) return;
+  var logo = document.querySelector('[data-exp="' + key + '"] img.logo');
+  var banner = document.getElementById('expModalBanner');
+  if (d.bannerImage) { banner.style.background = 'url(' + d.bannerImage + ') center/cover no-repeat'; banner.style.height = '160px'; }
+  else { banner.style.background = d.bannerColor; banner.style.height = '100px'; }
+  document.getElementById('expModalLogo').src = logo ? logo.src : '';
+  document.getElementById('expModalRole').textContent = d.role;
+  document.getElementById('expModalTimeline').textContent = d.timeline;
+  var ws = document.getElementById('expModalWithSection');
+  if (d.with) { ws.style.display = 'block'; document.getElementById('expModalWith').innerHTML = d.with.replace(/\n/g, '<br>'); }
+  else { ws.style.display = 'none'; }
+  var bs = document.getElementById('expModalBgSection');
+  if (d.coursework) { bs.style.display = 'block'; document.getElementById('expModalBgLabel').textContent = 'Relevant Coursework'; document.getElementById('expModalBackground').innerHTML = d.coursework.replace(/\n/g, '<br>'); }
+  else if (d.background) { bs.style.display = 'block'; document.getElementById('expModalBgLabel').textContent = 'Company Background'; document.getElementById('expModalBackground').textContent = d.background; }
+  else { bs.style.display = 'none'; }
+  var wks = document.getElementById('expModalWorkSection');
+  if (d.work) {
+    wks.style.display = 'block';
+    var wh = d.work.replace(/\n\n/g, '<br><br>');
+    document.getElementById('expModalWork').innerHTML = d.workHighlight ? wh + '<br><br><strong>' + d.workHighlight + '</strong>' : wh;
+  } else { wks.style.display = 'none'; }
+  var sk = document.getElementById('expModalSkills');
+  if (d.skills && d.skills.length) { sk.style.display = 'block'; document.getElementById('expModalSkillsList').innerHTML = d.skills.map(function(s) { return '<span class="exp-skill-tag">' + s + '</span>'; }).join(''); }
+  else { sk.style.display = 'none'; }
+  var gal = document.getElementById('expModalGallery');
+  if (d.gallery && d.gallery.length) { gal.style.display = 'block'; document.getElementById('expModalGalleryGrid').innerHTML = d.gallery.map(function(src, i) { return '<div class="exp-gallery-item"><img src="' + src + '" onerror="this.parentNode.style.background=\'#e8e4e0\';this.style.display=\'none\'" alt="Gallery ' + (i+1) + '"/></div>'; }).join(''); }
+  else { gal.style.display = 'none'; }
+  document.getElementById('expModalOverlay').classList.add('em-open');
+  document.body.style.overflow = 'hidden';
+}
+function closeExpModal(e) {
+  if (!e || e.target === document.getElementById('expModalOverlay')) {
+    document.getElementById('expModalOverlay').classList.remove('em-open');
+    document.body.style.overflow = '';
+  }
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeLightbox({ target: document.getElementById('lightboxOverlay') });
+    document.getElementById('expModalOverlay').classList.remove('em-open');
+    document.body.style.overflow = '';
+  }
+});
+</script>
+
+
+<!-- FOOTER -->
+<footer id="siteFooter">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <span class="footer-name">Ai-li Baird</span>
+      <span class="footer-location">Oakland, CA | Evanston, IL &nbsp;&middot;&nbsp; Central Time (CT)</span>
+    </div>
+    <div class="footer-center">
+      <span class="footer-copy">&copy; 2025 Ai-li Baird</span>
+    </div>
+    <div class="footer-right">
+      <a href="mailto:ai-libaird2027@u.northwestern.edu" class="footer-icon" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/ai-libaird/" target="_blank" class="footer-icon" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M19 3A2 2 0 0121 5V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
